@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./main.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="clock">
+      <p class="currenttime"></p>
+    </div>
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-12">
+              <h3 class="mb-4">
+                <img class="mr-2" src="https://img.icons8.com/ios-filled/38/8497A5/air-element.png"/>
+                - AIR QUALITY INDEX (AQI)
+              </h3>
+            </div>
+            <div class="col-4">
+                <select name="location" id="location" class="custom-select border" data-zone>
+                    <option value="請選擇地區" selected>請選擇地區</option>
+                </select>
+            </div>
+            <div class="col-8">
+                <table class=" table table-bordered border-0 mt-0">
+                    <thead>
+                        <tr class="text-center">
+                        <th width="16.6%"class="bg-primary">0～50</th>
+                        <th width="16.6%"class="bg-secondary">51～100</th>
+                        <th width="16.6%"class="bg-success">101～150</th>
+                        <th width="16.6%"class="bg-info">151～200</th>
+                        <th width="16.6%"class=" bg-warning">201～300</th>
+                        <th width="16.6%"class="bg-danger">301～400</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <th><img class="mb-1" src="https://img.icons8.com/ios/35/8497A5/happy--v1.png"/><br>良好</th>
+                            <td><img class="mb-1" src="https://img.icons8.com/ios/35/8497A5/neutral-emoticon--v1.png"/><br>普通</td>
+                            <td><img class="mb-1" src="https://img.icons8.com/ios/35/8497A5/confused.png"/><br>敏感族群不健康</td>
+                            <td><img class="mb-1" src="https://img.icons8.com/ios/35/8497A5/boring--v1.png"/><br>所有族群不健康</td>
+                            <td><img class="mb-1" src="https://img.icons8.com/ios/35/8497A5/disappointed--v1.png"/><br>非常不健康</td>
+                            <td><img class="mb-1" src="https://img.icons8.com/ios/35/8497A5/evil.png"/><br>危害</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center dashed mb-4">
+            <div class="countryTitle">
+              <h3 class="mb-0" data-country>新北市</h3>
+            </div>  
+            <p class="mb-0" data-time>2022-01-06 14:00 UPDATE</p>
+        </div>
+        <div class="row" >
+            <div class="col-4" data-list></div>
+            <div class="col-8">
+                <div class="row" data-site></div>
+            </div>
+        </div>
+    </div>
+  </div>  
+  <footer>
+    <div class="container">
+        <div class="d-flex justify-content-center py-2 px-2">
+            <small class="text-white mb-0">Data Sources：Environmental Protection Administration, Executive Yuan.&emsp;|&emsp;Design： Yooni</small>
+        </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+	<script src="https://momentjs.com/static/js/core-home.js"></script>
+  <script src="js/all.js"></script>
+</body>
+</html>
